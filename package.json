@@ -1,5 +1,5 @@
 {
-  "name": "smeta-lab",
+  "name": "smetalab-backend",
   "version": "1.7.7",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
