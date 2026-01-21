@@ -1,6 +1,5 @@
 import type { LocalePrefix } from 'node_modules/next-intl/dist/types/src/routing/types';
-
-import { BILLING_INTERVAL, type PricingPlan } from '@/types/Subscription';
+import { BILLING_INTERVAL, PLAN_ID, type PricingPlan } from 'smeta-contracts';
 
 const localePrefix: LocalePrefix = 'as-needed';
 
@@ -20,11 +19,7 @@ export const AppConfig = {
 
 export const AllLocales = AppConfig.locales.map(locale => locale.id);
 
-export const PLAN_ID = {
-  FREE: 'free',
-  PREMIUM: 'premium',
-  ENTERPRISE: 'enterprise',
-} as const;
+// PLAN_ID is now imported from smeta-contracts
 
 export const PricingPlanList: Record<string, PricingPlan> = {
   [PLAN_ID.FREE]: {

@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 
 export const GET = () => {
   return NextResponse.json({
-    status: 'ok',
-    timestamp: new Date().toISOString(),
-    service: 'smetalab-backend',
+    version: '1.7.7',
+    commit: '6d39369', // Last commit SHA
+    env: process.env.NODE_ENV,
   });
 };
