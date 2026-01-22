@@ -54,3 +54,5 @@ local
 .env.*
 Доступы
 
+
+!.env.example
